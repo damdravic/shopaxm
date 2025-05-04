@@ -1,0 +1,53 @@
+.header-wrapper {
+  margin: 0.1rem;
+  padding: 0.2rem;
+  min-height: 3rem;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  min-height: 4rem;
+    margin: 0.4rem 2.5rem;
+  padding: 1rem;
+  min-width: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-search-wrapper {
+  width: 100%;
+  flex: 1;
+  margin: 0.4rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.right-menu-wrapper {
+  margin: 0.4rem 2.5rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dropbtn{
+  max-height: 4rem;
+      background-color: #eee;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+  
+}

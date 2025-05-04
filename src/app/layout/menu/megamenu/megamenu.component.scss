@@ -1,0 +1,39 @@
+.megamenu {
+  position: absolute;
+  max-height: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  opacity: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+
+  &.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+.menu-column {
+  flex: 1;
+  min-width: 180px;
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  a {
+    display: block;
+    margin: 4px 0;
+    color: #555;
+    text-decoration: none;
+  }
+}

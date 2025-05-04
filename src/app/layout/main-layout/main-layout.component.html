@@ -1,0 +1,19 @@
+<div class="layout-wrapper">
+    <div class="layout-container forTest">
+        <app-header (toogleMegaMenu)="showMegaMenu = $event"></app-header>
+
+       <div class="layout-body forTest">
+        <app-megamenu [isOpen]="showMegaMenu"></app-megamenu>
+        <div class="layout-main">
+            <router-outlet></router-outlet>
+        </div>
+       </div>
+       <app-footer></app-footer>
+
+    </div>
+</div>
+
+
+
+
+
