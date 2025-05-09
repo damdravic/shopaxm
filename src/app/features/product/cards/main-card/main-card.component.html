@@ -1,1 +1,23 @@
-<p>main-card works!</p>
+<div class="main-card">
+    <div class="card-image">
+        <img src="https://placehold.co/250x200?text=Produs+Placeholder" alt="Imagine produs" />
+    </div>
+    <div class="card-content">
+        <div class="card-title">{{product.name}}</div>
+        <hr>
+        <div class="card-description">
+            <p>{{product.description}}</p>
+            
+            <div class="price">
+                <div class="cut-price">  {{product.price}} lei</div>
+                <div class="actual-price"> {{product.price}} lei</div>
+            </div>
+        </div>
+        <div class="add-button">
+           <a href=""> <i class="fa-solid fa-cart-plus"></i>
+            <p>Adauga in cos</p> </a>
+        </div>
+
+    </div>
+
+</div>

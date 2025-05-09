@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from '../../model/product';
 
 @Component({
   selector: 'app-main-card',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main-card.component.scss'
 })
 export class MainCardComponent {
+  @Input() product !: Product;
+
 
 }

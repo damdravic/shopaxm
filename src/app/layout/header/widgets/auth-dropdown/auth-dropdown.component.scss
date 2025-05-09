@@ -1,0 +1,16 @@
+.dropdown-panel {
+  position: absolute;
+  overflow: hidden;
+  max-height: 0;
+  right: 0;
+  opacity: 0;
+  width: 100px;
+  transition: max-height 1s ease, opacity 2s ease-out;
+
+  &.open {
+    position: absolute;
+    max-height: 300px;
+    opacity: 1;
+    transition: max-height 2s ease-in,opacity 1s ease-out;
+  }
+}
