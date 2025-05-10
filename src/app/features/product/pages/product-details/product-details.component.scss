@@ -1,0 +1,41 @@
+:host{
+      display: block;
+    height: 500px;
+    min-height: 500px;
+     max-width: 1600px;
+     display: flex;
+     justify-content: center;
+
+
+}
+
+.product-page{
+    width: 100%;
+
+
+    .breadcrumb-wrapper{
+        width: 100;
+
+    }
+    .title-wrapper{
+        width: 100%;
+    }
+
+    .main-wrapper{
+        width: 100%;
+        display: flex;
+        padding: 8px;
+     
+        .images-wrapper{
+            width: 50%;
+            min-height: 600px;
+            padding: 8px;
+
+        }
+
+
+
+
+    }
+
+}

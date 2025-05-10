@@ -1,7 +1,9 @@
 <div class="main-card">
+<a [routerLink]="['/product',product.id]" class="card-link">
     <div class="card-image">
         <img src="https://placehold.co/250x200?text=Produs+Placeholder" alt="Imagine produs" />
-    </div>
+    </div></a>
+
     <div class="card-content">
         <div class="card-title">{{product.name}}</div>
         <hr>

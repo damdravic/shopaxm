@@ -3,7 +3,7 @@
         <app-header (toogleMegaMenu)="showMegaMenu = $event"></app-header>
        <div class="layout-body ">
         <app-megamenu [isOpen]="showMegaMenu"></app-megamenu>
-      <app-image-slider [slides]="slides" [animationSpeed]="100" [indicatorsVisibility]="true" ></app-image-slider>
+      
         <div class="layout-main">
             <router-outlet></router-outlet>
         </div>

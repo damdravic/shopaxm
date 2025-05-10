@@ -4,25 +4,29 @@ import { catchError, map, of } from 'rxjs';
 import { ListOfProductsComponent } from "../../../product/components/list-of-products/list-of-products.component";
 import { HttpResponse } from '@angular/common/http';
 import { Product } from '../../../product/model/product';
+import { ImageSliderComponent } from '../../../../layout/image-slider/image-slider.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [ListOfProductsComponent],
+  imports: [ListOfProductsComponent, ImageSliderComponent],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss'
+  styleUrl: './home-page.component.scss',
 })
-export class HomePageComponent implements OnInit{
- 
-  products: Product[] =[];
+export class HomePageComponent implements OnInit {
+  slides: any[] = [
+    {
+      url: 'images/Untitled-1.png',
+      title: 'Image 1',
+    },
+    {
+      url: 'images/ewe.png',
+      title: 'Image 1',
+    },
+  ];
 
- constructor(private productService : ProductService){}
- 
-  ngOnInit(): void {
+  products: Product[] = [];
 
-  }
+  constructor(private productService: ProductService) {}
 
-
-
-  
-
+  ngOnInit(): void {}
 }

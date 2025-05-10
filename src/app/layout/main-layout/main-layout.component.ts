@@ -12,7 +12,6 @@ import { ImageSliderComponent } from '../image-slider/image-slider.component';
   selector: 'app-main-layout',
   imports: [
     CommonModule,
-    ImageSliderComponent,
     RouterModule,
     HeaderComponent,
     FooterComponent,
@@ -24,14 +23,5 @@ import { ImageSliderComponent } from '../image-slider/image-slider.component';
 export class MainLayoutComponent {
   showMegaMenu = false;
 
-  slides: any[] = [
-    {
-      url: 'images/Untitled-1.png',
-      title: 'Image 1',
-    },
-    {
-      url: 'images/ewe.png',
-      title: 'Image 1',
-    },
-  ];
+
 }

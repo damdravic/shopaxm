@@ -35,6 +35,18 @@ console.log("in service ...")
         })
       )
   }
+
+  getProductById$(id: string): Observable<Product | undefined> {
+    return this.getProducts$().pipe(
+      map(response => {
+        return response.data?.products.find(p => p.id === +id);
+      }
+      )
+    )
+
+    
+    
+  }
    
 
 

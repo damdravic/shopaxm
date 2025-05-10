@@ -12,6 +12,10 @@ export const layoutRoutes: Routes = [
         path: '',
         component: HomePageComponent,
       },
+      {
+        path: 'product',
+        loadChildren: () => import("../features/product/product.routes").then(m => m.productRoutes)
+      }
     ],
   },
 ];
