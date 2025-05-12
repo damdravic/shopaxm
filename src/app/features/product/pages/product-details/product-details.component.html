@@ -1,19 +1,36 @@
 <div class="product-page forTest">
-    <div class="breadcrumb-wrapper">
+    <div class="breadcrumb-wrapper forTest">
         Racire, Purificare aer, Incalzire/Aparate racire aer/Aer conditionat/
 
     </div>
-    <div class="title">
+    <div class="title-wrapper forTest">
         {{product.name}}
     </div>
     <div class="main-wrapper">
-        <div class="images-wrapper forTest">i mages</div>
-        <div class="info-wrapper">
-            <p>{{product!.description}}</p>
-            <h1 style="display: inline">{{product!.description}}</h1>
+        <div class="images-wrapper forTest">
+            <div class="main-image forTest"><img src="" alt=""></div>
+            <div class="thumbnails-wrapper forTest"></div>
         </div>
+        <div class="info-wrapper forTest">
+            <div class="back-link forTest">
+                <a [routerLink]=""> <fa-icon [icon]="faArrowLeft"></fa-icon> Back to previous page  </a>
+            
+            </div>
+            <h1>{{product!.name}}</h1>
+            <p style="display: inline">{{product!.description}}</p>
+
+
+            <div class="btns-wrapper forTest">
+                <button><fa-icon [icon]="faCartPlus" (click)="addToCart(product.id)" ></fa-icon>Adauga in Cos</button>
+                <button><fa-icon [icon]="faHeartCirclePlus"(click)="addToWish(product.id)"></fa-icon> Adauga in WishList </button>
+            </div>
+
+        </div>
+        
     </div>
-    <div class="category-list">lista de produse din aceiasi categorie</div>
+    <div class="category-list">
+        <app-list-of-products></app-list-of-products>
+    </div>
 
     
 </div>

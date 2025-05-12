@@ -1,0 +1,10 @@
+<div class="cart-wrapper forTest">
+    @for ( prod of myCart; track prod.id) {
+    <div class="product">
+       
+        <app-cart-card [product]="prod"></app-cart-card>
+    </div>
+    } @empty {
+    <div>No products in cart.</div>
+    }
+    

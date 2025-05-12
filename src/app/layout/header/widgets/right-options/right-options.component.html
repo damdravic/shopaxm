@@ -1,4 +1,4 @@
-<div class="right-item">
+<!-- <div class="right-item">
     <a href="" >
         <i class="fa-solid fa-heart"></i>
         <div class="item">Wishlist</div>
@@ -9,14 +9,14 @@
         <i class="fa-solid fa-not-equal"></i>
         <div class="item">Compari</div>
     </a>
-</div>
+</div> -->
 <div class="right-item">
-    <a href="">
+    <a [routerLink]="['/cart']">
         <i class="fa-solid fa-cart-shopping"></i>
         <div class="item">Cart</div>
     </a>
 </div>
-<div class="right-item forTest" (mouseenter)="authDropdownVisibility = true "
+<div class="right-item " (mouseenter)="authDropdownVisibility = true "
  (mouseleave)=" authDropdownVisibility = false">
     <a href="">
         <i class="far fa-user"></i>

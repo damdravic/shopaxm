@@ -7,22 +7,32 @@
 }
 
 .right-item {
-  transition: transform 0.3s ease, margin 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.2s ease, margin 0.2s ease, font-size 0.2s ease;
   position: relative;
+ 
+ 
   a {
+  padding: 8px;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
+    margin: 0 10px;
+    font-size: 1.22rem;
     transition: transform 0.3s ease, margin 0.3s ease, font-size 0.3s ease;
 
     &:hover {
-      margin: 3px;
-      font-size: 1rem;
+      
+      transform: scale(1.20);
+         //border: 1px solid rgb(223, 223, 223);
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgb(179, 178, 178);
+     
     }}
 
     i {
-      margin: 0 5px;
+      margin: 0 10px;
     }
   }
 

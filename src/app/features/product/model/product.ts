@@ -16,7 +16,7 @@ export interface Product {
 
 }
 
-export const emptyProduct : Product= {
+export const emptyProduct : Product = {
  
   "id": 0,
   "name": "",
